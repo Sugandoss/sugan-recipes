@@ -1,0 +1,281 @@
+<html>
+  <head>
+    <title class="text-center"> Chefify </title>
+    {% include 'bootstrap.html' %} 
+    <style>
+
+      body{
+          margin-top:20px;
+          background:#DCDCDC;
+      }
+    .content {
+        padding: 35px 0px;
+    }
+    
+     .post-list {
+        padding: 90px 0px;
+    }
+    
+    .post-detail {
+        padding: 40px 0px;
+        margin-top: 120px;
+    }
+    
+    .post {
+        width: 100%;
+        float: left;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        background: #fff;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+    
+    .feature-post .thumbnail .author-info {
+        padding: 20px 5px 20px 40px;
+        text-align: left;
+        min-height: 80px;
+        background: #2c3840;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .post-type {
+        float: left;
+        width: 100%;
+    }
+    
+    .post iframe {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .post .mejs-container {
+        border-radius: 3px 3px 0px 0px;
+        width: 100% !important;
+    }
+    
+    .post .post-img a {
+        display: block;
+    }
+    
+    .post .post-img:hover a img {
+        opacity: 0.7;
+    }
+    
+    .post .post-img a img {
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        height: auto;
+        border-radius: 3px 3px 0px 0px;
+    }
+    
+    .post-detail .post .caption {
+        padding: 55px 45px 0px 45px;
+    }
+    
+    .post .caption {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding: 25px 25px;
+    }
+    
+    .post .caption h3 {
+        margin: 0px 0px 20px 0px;
+        color: #36a0e7;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 42px;
+    }
+    
+    .post .caption p {
+        line-height: 28px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .post .author-info {
+        padding: 15px 15px 15px 15px;
+        text-align: left;
+        min-height: 60px;
+        border-bottom: 1px solid #ddd;
+        background: #fcfcfc;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .author-info .list-inline {
+        margin: 0px;
+    }
+    
+    .post .author-info ul li:first-child {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .post .author-info ul li {
+        float: left;
+        border-left: 1px solid #ddd;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .post .author-info ul li p {
+        line-height: 16px;
+        color: #3b4952;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    .post .author-info ul li strong {
+        color: #3b4952;
+    }
+    
+    .post .author-info ul li a {
+        color: #3b4952;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .post .author-info ul li a:hover {
+        color: #e74c3c;
+        text-decoration: none;
+    }
+    
+    .post .author-info ul li .icon-box {
+        margin-right: 15px;
+        width: 36px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 30px;
+        height: 36px;
+        float: left;
+        background: transparent;
+        color: #aebbc5;
+    }
+    
+    .post .author-info ul li .icon-box img {
+        border-radius: 3px;
+        width: 100%;
+    }
+    
+    .post .author-info ul li .info {
+        float: left;
+    }
+    
+    .post .author-info.author-info-2 ul li:first-child {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .post .author-info.author-info-2 ul li .icon-box {
+        font-size: 28px;
+    }
+    
+    
+    .img-grid {
+        float: left;
+        margin-bottom: 40px;
+    }
+    
+    .img-grid li {
+        margin: 0px;
+        float: left;
+    }
+    
+    .post .caption h5 {
+        text-decoration: underline;
+        margin: 0px 0px 20px 0px;
+        color: #3b4952;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .post .list-unstyled {
+        margin-bottom: 40px;
+    }
+    
+    .post .list-unstyled li {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #49545b;
+    }
+    
+    .post .list-unstyled li i {
+        color: #a0b9ca;
+        margin-right: 15px;
+    }
+    
+    blockquote {
+        background: #f2f6f8;
+        border: 1px solid #e5e5e5;
+        line-height: 28px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #49545b;
+    }
+    
+    .line-block {
+        padding: 20px 45px;
+        border-top: 1px solid #eef3f6;
+        border-bottom: 1px solid #eef3f6;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .line-block .tags {
+        margin-bottom: 0px;
+    }
+
+    </style>
+  </head>
+  <body>
+     {% include 'navbar.html' %}
+    <div class="container">
+    <div class="col-md-12 col-lg-12">
+        <article class="post vt-post">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                    <div class="post-type post-img">
+                        <a href="#"><img src="/static/suganya.jpg" class="img-responsive" alt="image post"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                    <div class="caption">
+                        <h3 class="md-heading" style="color:black">The Code-Baker, Chef, Tamil Poet and a Mom</h3>
+                        <p> Hi there, Welcome to my food blog <b>Chefify</b>. I’m <b>Suganya Geetha Ramadoss</b>, author of this website. Being an IT professional, created this website on my own. 
+I learnt the basics of cooking at the age of 12, and cooked my first recipe(Veg Briyani) at the age of 16. It was a great hit and started cooking very often after my boards. I started helping the one and only great cook - my mom(Geetha) during my college days. I always had a great inspiration about her cooking skills. She cooked North Indian, South Indian, Italian dishes(what not) and was very popular in my hometown for all her recipes.</br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We used to wait for her evening snacks. She has never repeated her menu for at least 45 days. You might be able to understand her cooking skills now. People used to tell her `therukodi varai vaasanai varuthu` (which means, even the people at the end of the street can smell a nice flavour when she cooks). 
+                       I started learning the cooking skills from her, and after 4 years of my college life(being a studious girl and topper in the university), I joined one of the top MNCs.</br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  I was put up in a hostel where I started hating the food immediately after 1 year. I worked in several branches in several places, so I had the opportunity to move from one hostel to another.  Even though, I changed 8 hostels in 4 years of my tenure in Chennai, I didn’t like any hostel food, then , I decided to stay in a room where I can cook on my own. That’s when, I started making food for breakfast and lunch. 
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I was not a very healthy person at that time, I used to prefer lays chips and Cake for snacks (that too on a daily basis). 
+              
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   When I got shifted to Bangalore after marriage, my hubby and I started exploring different street foods when we were in Indiranagar. After we had our angel, we decided not to eat much in the hotels. That’s when, we(me and my hubby) started exploring the different cuisines, different varieties of food, different alterations that we can do to the existing food system.</br>
+              
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I took a long career break of 8 years after my lovely angel was born, and that was the time, I started concentrating more on healthy portions rather than dumping all the store bought junk (Because, our stomach is not a dustbin to dump everything). Over a period of time, we stopped using maida, sugar, sunflower oils, etc.. And we also started using handmade powders(sambar, rasam powder, etc) instead of store bought powders. We started replacing biscuits with healthy food and slowly started avoiding all the junk food that we were consuming. We were able to do this, because Karthik(my hubby) is also a great cook and understand the nuances behind this healthy food system.</br>
+              
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It’s been 10 years of marriage life, and we are away from all junk items as much as possible. Our strive is more towards healthy food (including more millets in the food portions).</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a cook for more than <b>2 decades</b>, I thought of sharing the recipes with all my friends/families. It’s my husband’s idea to make a website of my own as I rejoined IT in 2021 and here it is. </p>
+ </div>
+</div>
+</div>
+{% include 'footer.html' %}
+</article>
+</div>
+      
+</div>
+
+</body>
+  
+</html>

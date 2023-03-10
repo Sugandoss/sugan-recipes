@@ -1,0 +1,45 @@
+<!--This is the main page, rendering the first html page of my project Chefify-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="text-center"> Chefify </title>
+    {% include 'bootstrap.html' %} 
+    <style>
+        body{
+          overflow-y: hidden;
+          overflow-x: hidden;
+        }
+        .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height:103px;
+            background:white;
+        }
+    </style>
+  </head>
+  
+  <body>
+    {% include 'navbar.html' %}
+    {% include 'agribanner.html' %}
+    
+    <div class=container>    
+      <h1 class="text-center mt-2 mb-4">Be Healthy</h1>
+      <div class="row">
+      <div class="col-md-6 mt-2 mb-4">
+          <p> The nutritional benefits of food are well known. The associations between our physical and mental health are firmly established, though perhaps much lesser appreciated are the longer-term impacts of food on mood.
+          As well as the content of our diet though, the conventions in how we prepare it are now in focus for the potential benefits this might have for our mental health. There are benefits to good culinary skills that extend beyond the nutritional. Researchers believe culinary participation can work to positively improve our mental health.
+        Cooking is thought, by some experts, to have been a relatively recent invention in human evolutionary history, with researchers pitching the innovation to have occurred around 500,000 years ago. It may have occurred far earlier than this, though archaeological evidence is increasingly difficult to discern the farther back in time we go. </p>
+      </div>
+      
+      <div class="col-3">
+        <img src="/static/wordcloud.jpg" class="d-none d-md-block col-md-6 mt-2 mb-4" style="height:200px; width:800px;">
+      </div>
+      </div>
+    </div> 
+    <div class="footer">
+    {% include 'footer.html' %}
+  </div>
+  </body>
+</html>

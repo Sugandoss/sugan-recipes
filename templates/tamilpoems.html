@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <title class="text-center"> Chefify </title>
+    {% include 'bootstrap.html' %} 
+    <style>
+
+      body{
+          margin-top:20px;
+          background:#DCDCDC;
+      }
+    .content {
+        padding: 35px 0px;
+    }
+    
+     .post-list {
+        padding: 90px 0px;
+    }
+    
+    .post-detail {
+        padding: 40px 0px;
+        margin-top: 120px;
+    }
+    
+    .post {
+        width: 100%;
+        float: left;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        background: #fff;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+    
+    .feature-post .thumbnail .author-info {
+        padding: 20px 5px 20px 40px;
+        text-align: left;
+        min-height: 80px;
+        background: #2c3840;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .post-type {
+        float: left;
+        width: 100%;
+    }
+    
+    .post iframe {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .post .mejs-container {
+        border-radius: 3px 3px 0px 0px;
+        width: 100% !important;
+    }
+    
+    .post .post-img a {
+        display: block;
+    }
+    
+    .post .post-img:hover a img {
+        opacity: 0.7;
+    }
+    
+    .post .post-img a img {
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        height: auto;
+        border-radius: 3px 3px 0px 0px;
+    }
+    
+    .post-detail .post .caption {
+        padding: 55px 45px 0px 45px;
+    }
+    
+    .post .caption {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding: 25px 25px;
+    }
+    
+    .post .caption h3 {
+        margin: 0px 0px 20px 0px;
+        color: #36a0e7;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 42px;
+    }
+    
+    .post .caption p {
+        line-height: 28px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .post .author-info {
+        padding: 15px 15px 15px 15px;
+        text-align: left;
+        min-height: 60px;
+        border-bottom: 1px solid #ddd;
+        background: #fcfcfc;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .author-info .list-inline {
+        margin: 0px;
+    }
+    
+    .post .author-info ul li:first-child {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .post .author-info ul li {
+        float: left;
+        border-left: 1px solid #ddd;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .post .author-info ul li p {
+        line-height: 16px;
+        color: #3b4952;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    .post .author-info ul li strong {
+        color: #3b4952;
+    }
+    
+    .post .author-info ul li a {
+        color: #3b4952;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .post .author-info ul li a:hover {
+        color: #e74c3c;
+        text-decoration: none;
+    }
+    
+    .post .author-info ul li .icon-box {
+        margin-right: 15px;
+        width: 36px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 30px;
+        height: 36px;
+        float: left;
+        background: transparent;
+        color: #aebbc5;
+    }
+    
+    .post .author-info ul li .icon-box img {
+        border-radius: 3px;
+        width: 100%;
+    }
+    
+    .post .author-info ul li .info {
+        float: left;
+    }
+    
+    .post .author-info.author-info-2 ul li:first-child {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .post .author-info.author-info-2 ul li .icon-box {
+        font-size: 28px;
+    }
+    
+    
+    .img-grid {
+        float: left;
+        margin-bottom: 40px;
+    }
+    
+    .img-grid li {
+        margin: 0px;
+        float: left;
+    }
+    
+    .post .caption h5 {
+        text-decoration: underline;
+        margin: 0px 0px 20px 0px;
+        color: #3b4952;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .post .list-unstyled {
+        margin-bottom: 40px;
+    }
+    
+    .post .list-unstyled li {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #49545b;
+    }
+    
+    .post .list-unstyled li i {
+        color: #a0b9ca;
+        margin-right: 15px;
+    }
+    
+    blockquote {
+        background: #f2f6f8;
+        border: 1px solid #e5e5e5;
+        line-height: 28px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #49545b;
+    }
+    
+    .line-block {
+        padding: 20px 45px;
+        border-top: 1px solid #eef3f6;
+        border-bottom: 1px solid #eef3f6;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .line-block .tags {
+        margin-bottom: 0px;
+    }
+
+    </style>
+  </head>
+  <body>
+     {% include 'navbar.html' %}
+    <div class="container">
+    <div class="col-md-12 col-lg-12">
+        <article class="post vt-post">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                    <div class="post-type post-img">
+                        <a href="#"><img src="/static/kavithaibooks.jpeg" class="img-responsive" alt="image post"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                    <div class="caption">
+                        <h4 class="md-heading" style="color:black">Started writing Tamil Poems at the age of 16 and have written more than 250+ poems so far.  Also, released 3 poem books. Some are here for you !!</h4>
+                        <p> <b>என் முதல் படைப்பு</b><br>
+அம்மா என்பவள் தாய்!<br>
+அவள் கண்ணீர் விட்டால் நோய்!<br>
+முத்தாய் இருக்கும் பற்கள்!<br>
+சிரிக்கும் பொழுது சிற்பிகள்!<br>
+பாடம் சொல்லி தருவாள்!<br>
+பாட்டு ஒன்று இசைப்பாள்!<br>
+குழந்தைகளுக்கு மகிழ்ச்சி ஊட்டுவாள்!<br>
+அப்பொழுது அறிவும் வளர்ப்பாள்!<br>
+நிலவை காட்டுவாள்!<br>
+உணவை ஊட்டுவாள்!<br>
+அம்மா மீது பாசம்!<br>
+அவளே எனது சுவாசம்!<br>
+- என்னால் செதுக்கப்பட்ட முதல் கவிதை!<br>
+என் சிந்தனையின் முதற்படி!<br>
+எழுதப்பட்ட வருடம்- 2001ம் ஆண்டு!<br>
+என்னாலும் கவிதை எழுத முடியும் என்று உணர்த்திய இந்த கவிதையின் உயிர் மட்டுமல்ல என் உயிரும் அவள்தான் - என்னை பெற்றவள்!
+<br><br>
+<b>அம்மா</b><br> 
+புதைத்து வைத்த நெஞ்சில் தோண்டி எடுக்க காத்திருக்கும் வார்த்தைகள் ஓராயிரம் !<br>
+சொல்லிவிட ஒரு கணம் துடிக்கிறது என் மனம்!<br>
+ஏன் என்னை விட்டு சென்றாய், கண்ணீரில் காலத்தை தள்ளிவிட முயற்சிக்கும் நான் என் புன்னகையில் ஏமாற்றுகிறேன் மனிதர்களை !
+                          <br><br>
+<b>அம்மா</b><br> 
+ஒரு முறை திரும்பிவந்தால் உன்னுடன் பயணித்து விடுவேனோ என்ற அச்சத்தில் நீ உறங்க !<br>
+தனிமையின் துக்கத்தை கண்ணீருடன் பகிர்ந்துகொள்கிறேன் உறங்காமல்!<br><br>
+
+<b>காதல்</b><br>
+நான் கவிதை எழுத முயன்ற பொழுது பேனாமுனை ஒத்துழைக்கவில்லை!<br>
+அவளை பார்த்தபிறகு பேனாமுனையும் தடுமாறியது என்னைப்போல்!<br>
+என்னுள் இருந்த ராகத்துடன் பேனா தாளம் சேர்க்க - மனம் என்னும் வெள்ளை காகிதத்தில் கவிதை என்னும் சப்தத்தை உருவாக்கினேன் மௌனம் என்னும் காதலுக்காக!
+<br><br>
+<b>பதில்</b><br>
+உனக்கு கவிதை எழுத தெரியுமா என்று யாராவது என்னிடம் கேட்டால் - என் பேனாமுனை முந்திக்கொள்கிறது பதிலளிக்க - ஒரு கவிதையால்!
+<br><br>
+<b>காத்திருத்தல்</b></br>
+அவள் படிப்பதற்காக காத்திருந்தது என் காதல் வரிகள்!
+அவளோ படித்துவிட்டாள் - வருந்தினேன்... படித்தது என்னை காதலித்த என் மனைவி என்பதை அறிந்து </br></br>
+<b>உடல் உறுப்புகள் தானம்! </b><br>
+என்னால் பேச முடிந்த ஒரு தருணத்தை வெளிக்காட்டுகிறேன், என்றால், அதற்கு முன் மௌனம் ஒரு சலனத்தை ஏற்படுத்தியதால்!<br>
+ விடைபெற கால்கள் துறத்துகிறது! ஆனால், காதுகள் நற்செய்தியை கேட்கவில்லையே!<br>
+உன்னை உறக்கத்திலிருந்து எழுப்ப கொடுத்துவிட்டாய் உன் பாகங்களை!<br><br>
+
+<b>அம்மா</b><br>
+அடக்கம், பொறுமை, தியாகம், நிதானம், காதல், பாசம், அன்பு, மொழி, ஒற்றுமை, அழகு, வெற்றி, தவம், நன்மை, கண்டிப்பு, நட்பு, நன்னடக்கம், பெருமை, அறிவு, பண்பு -
+இப்படி எத்தனையோ தமிழ் வார்த்தைகளில் தொலைந்துவிட்டேன்!<br>
+எப்படி சொல்லாமல் இருப்பது இந்த தமிழ் வார்த்தைகளின் உயிர்வார்த்தை நீ என்பதை - அம்மா!
+
+ </p>
+ </div>
+</div>
+</div>
+{% include 'footer.html' %}
+</article>
+</div>
+</div>
+
+</body>
+  
+</html>

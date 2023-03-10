@@ -1,0 +1,31 @@
+<!-- This is the second page , It displays the index of all the recipes. This page calls menulist.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title class="text-center"> Chefify </title>
+  {% include 'bootstrap.html' %} 
+  <style>
+    body{
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:150px;
+    background:white;
+    }
+  </style>
+</head>
+  
+<body>
+  {% include 'navbar.html' %}
+  {% include 'healthydoodlesbanner.html' %}  
+  {% include 'menulist.html' %}
+  <div class="footer">
+    {% include 'footer.html' %}
+  </div>
+</body>
+</html>

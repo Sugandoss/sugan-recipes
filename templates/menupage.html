@@ -1,0 +1,33 @@
+<!-- This is the menu page , It displays the menu of all the recipes -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{recipe.menuname}}</title>
+    {% include 'bootstrap.html' %}
+    {% include 'navbar.html' %}
+    {% include 'suganrecipesbanner.html' %}
+  </head>
+  <body>
+    <div class=container>    
+      <div class="row">
+      <div class="col-md-9 mt-2 mb-4">
+        <h3 class="mb-0">{{recipe.menuname}}</h3>
+        <p class="lead mt-0">{{recipe.category}}</p>
+        <h3>Ingredients</h3>
+        <ul>
+          {% for line in recipe.ingredients.split(",") %}
+          <li>{{line}}</li>
+          {% endfor %}
+        </ul>
+        <h3>Method</h3>
+          <ol>
+          {% for line in recipe.method.split(".") %}
+          <li>{{line}}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      </div>
+    </div> 
+    {% include 'footer.html' %}  
+  </body>
+</html>

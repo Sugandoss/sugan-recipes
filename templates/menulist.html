@@ -1,0 +1,52 @@
+<!-- This is the third page , It displays all the menus in dropdown boxes -->
+<html>
+  <head>
+    <style>
+      .dropdown-menu.dropdown-menu-wide {
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+        background-color:white;
+        color: black;
+      }
+      .dropdown-menu{
+        width: 100%;
+        text-align: center;
+        background-color:white;
+        color: black;
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <div class="container">
+      <div class="btn-group btn-group-justified" role="group">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="background-color:black; border:black">Breakfast/Dinner Recipes</button>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-wide">
+            <li><a href="/Breakfast-Dinner/1">Mapillai Samba Aapam </a></li>
+            <li><a href="/Breakfast-Dinner/2">Ragi Puttu</a></li>
+          </ul>
+        </div>
+        
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black; border:black">Lunch Recipes </button>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-wide">
+            <li><a href="/Lunch/1">Green Panneer Pulao</a></li>
+          </ul>
+        </div>
+        
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black; border:black">Snacks </button>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-wide">
+            <li><a href="/Snacks/1">Flax Seed Laddoo</a></li>
+            <li><a href="/Snacks/2">Walnut Halwa</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
