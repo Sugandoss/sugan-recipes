@@ -30,7 +30,7 @@ Website for all my cooking recipes
       1. When user clicks on envelope symbol, it goes to the mailbox to allow the user to send a mail with the subject             'Queries about Existing Recipe [or] Expecting New Recipe'
 
 #6. Tamil Poems:
-      1. When user clicks on pencil-square symbol, it goes to (<url>/tamilpoems) page and its respective code is written           in tamilpoems.html
+      1. When user clicks on pencil-square symbol(in the navigation bar) or 'Tamil Poems'(in the footer), it goes to (<url>/tamilpoems) page and its respective code is written in tamilpoems.html
       2. Tamil Poems Page displays 2 items - My 3 Poem books image and some of my tamil poems 
       3. tamilpoems.html includes the image(kavithaibooks.jpeg)
 
